@@ -2,7 +2,7 @@ FROM php:7.4-fpm-alpine
 
 WORKDIR /var/www/
 
-RUN apk add gmp-dev
+RUN apk add gmp-dev gettext-dev icu-dev zip libzip-dev
 RUN curl --silent --show-error https://getcomposer.org/installer | php
 
 # Copy any config files in
@@ -14,7 +14,9 @@ RUN docker-php-ext-install \
   calendar \
   pdo_mysql \
   gmp \
-  opcache && \
+  bcmath \
+  intl \
+  zip && \
   docker-php-ext-enable pdo_mysql opcache
 
 COPY . /var/www/
