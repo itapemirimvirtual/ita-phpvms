@@ -14,6 +14,9 @@ services:
     depends_on:
       - mysql
       - redis
+    links:
+      - mysql
+      - redis
 
   nginx:
     image: nginx:1.15.12-alpine
@@ -36,7 +39,7 @@ services:
       MYSQL_ROOT_PASSWORD:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     volumes:
-      - ./storage/docker/mysql:/var/lib/mysql
+      - db:/var/lib/mysql
       - ./resources/docker/mysql:/etc/mysql/conf.d
     ports:
       - 3306:3306
@@ -51,11 +54,14 @@ services:
     restart: always
 
   # Use this to tail the logs so it's just all in a single window
-  #logs:
-  #    image: busybox
-  #    command: tail -f -F -n 0 /var/www/storage/logs/laravel.log
-  #    restart: always
-  #    volumes:
-  #      - ./storage:/var/www/storage
-  #    depends_on:
-  #      - app
+  logs:
+    image: busybox
+    command: tail -f -F -n 0 /var/www/storage/logs/laravel.log
+    restart: always
+    volumes:
+      - ./storage:/var/www/storage
+    depends_on:
+      - app
+      
+volumes:
+  db:
