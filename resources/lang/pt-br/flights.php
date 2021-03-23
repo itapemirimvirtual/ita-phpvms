@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'flights'          => 'Voos',
     'flightnumber'     => 'Número do Voo',
     'flighttime'       => 'Tempo do Voo',
     'flighttype'       => 'Tipo de Voo',
