@@ -1,10 +1,6 @@
 /**
  *
  */
-
-body {
-    background-color: #363636;
-}
 .select2-container {
     margin-top: 2px;
 }
@@ -92,12 +88,7 @@ body {
 }
 
 .border-blue-bottom {
-    /* border-bottom: 3px solid #067ec1; */
-    border-bottom: 3px solid #fdda32;
-}
-
-.border-yellow-bottom {
-    border-bottom: 3px solid #fdda32;
+    border-bottom: 3px solid #067ec1;
 }
 
 .full-height {
