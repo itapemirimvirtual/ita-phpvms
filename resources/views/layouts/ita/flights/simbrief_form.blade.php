@@ -5,7 +5,7 @@
 
   <form id="sbapiform">
     <div class="row">
-      <h2>Create Simbrief Briefing</h2>
+      <h2 class="text-white">Create Simbrief Briefing</h2>
       <div class="card">
         <div class="col-md-12">
           <div class="row">
