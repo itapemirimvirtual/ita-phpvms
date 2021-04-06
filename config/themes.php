@@ -3,7 +3,7 @@
 return [
     'themes_path' => resource_path('views/layouts'), // eg: base_path('resources/themes')
     'asset_not_found' => 'LOG_ERROR',
-    'default' => 'ita',
+    'default' => 'default',
     'cache' => false,
 
     /*
@@ -27,6 +27,10 @@ return [
 
         'default' => [
             'extends' => 'false',
+        ],
+
+        'ita' => [
+            'extends' => 'default',
         ],
 
         // Add your themes here. These settings will override theme.json settings defined for each theme

@@ -51,13 +51,18 @@ services:
       - ./storage/docker/redis:/data
     ports:
       - 6379:6379
-    restart: always
+  node:
+    image: node:lts
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    tty: true
+    command: yarn dev
 
   # Use this to tail the logs so it's just all in a single window
   logs:
     image: busybox
     command: tail -f -F -n 0 /var/www/storage/logs/laravel.log
-    restart: always
     volumes:
       - ./storage:/var/www/storage
     depends_on:
