@@ -1,5 +1,5 @@
 <div class="table-responsive">
-  <table class="table table-hover table-striped text-white">
+  <table class="table table-hover table-striped bg-white">
     <thead>
     <tr>
       <th>{{ trans_choice('common.flight', 1) }}</th>

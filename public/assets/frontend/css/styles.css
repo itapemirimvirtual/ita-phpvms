@@ -5,6 +5,11 @@
 body {
     background-color: #363636;
 }
+
+.text-gray {
+    color: #282828 !important;
+}
+
 .select2-container {
     margin-top: 2px;
 }

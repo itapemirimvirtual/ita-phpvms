@@ -1,4 +1,4 @@
-<table class="table table-hover text-white" id="users-table">
+<table class="table table-hover bg-white" id="users-table">
   <thead>
   <th></th>
   <th>@lang('common.name')</th>

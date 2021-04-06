@@ -4,8 +4,8 @@
 @section('content')
   <div class="row">
     @include('flash::message')
-    <div class="col-md-9 text-white">
-      <h2>{{ trans_choice('common.flight', 2) }}</h2>
+    <div class="col-md-9">
+      <h2 class="text-white">{{ trans_choice('common.flight', 2) }}</h2>
       @include('flights.table')
     </div>
     <div class="col-md-3">

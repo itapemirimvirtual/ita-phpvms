@@ -88,10 +88,10 @@
     {{-- Sidebar --}}
     <div class="col-sm-4">
       <div class="card">
-        <div class="nav nav-tabs nav-tabs-warning" role="tablist">
+        <div class="nav nav-tabs bg-yellow" role="tablist">
           @lang('dashboard.weatherat', ['ICAO' => $current_airport])
         </div>
-        <div class="card-body">
+        <div class="card-body border-blue-bottom">
           <!-- Tab panes -->
           <div class="tab-content">
             {{ Widget::Weather(['icao' => $current_airport]) }}
@@ -100,10 +100,10 @@
       </div>
 
       <div class="card">
-        <div class="nav nav-tabs nav-tabs-warning" role="tablist">
+        <div class="nav nav-tabs bg-yellow" role="tablist">
           @lang('dashboard.recentreports')
         </div>
-        <div class="card-body">
+        <div class="card-body border-blue-bottom">
           <!-- Tab panes -->
           <div class="tab-content">
             {{ Widget::latestPireps(['count' => 5]) }}
@@ -112,10 +112,10 @@
       </div>
 
       <div class="card">
-        <div class="nav nav-tabs nav-tabs-warning" role="tablist">
+        <div class="nav nav-tabs bg-yellow" role="tablist">
           @lang('common.newestpilots')
         </div>
-        <div class="card-body">
+        <div class="card-body border-blue-bottom">
           <!-- Tab panes -->
           <div class="tab-content">
             {{ Widget::latestPilots(['count' => 5]) }}
