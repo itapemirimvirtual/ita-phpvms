@@ -2,7 +2,7 @@
 @section('title', __('common.profile'))
 
 @section('content')
-  <div class="row profile-page content-center text-color-dark-beige">
+  <div class="row profile-page content-center text-white">
     <div class="col-md-4" style="text-align:center;">
       <div class="photo-container">
         @if ($user->avatar == null)
@@ -19,7 +19,7 @@
           <span class="flag-icon flag-icon-{{ $user->country }}"></span>
         </p>
       </div>
-        <p class="description" style="color: #9A9A9A;">
+        <p class="description text-white" style="font-weight: bold">
           {{ $user->airline->name }}
         </p>
       <div class="social-description">
@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="card text-center">
-              <div class="card-body">
+              <div class="card-body text-black">
                 <h2 class="card-title">{{ $user->flights}}</h2>
                 <p class="card-text">Flights</p>
               </div>
@@ -47,7 +47,7 @@
 
           <div class="col-lg-6">
             <div class="card text-center">
-              <div class="card-body">
+              <div class="card-body text-black">
                 <div class="social-description">
                   <h2 class="card-title">@minutestotime($user->flight_time)</h2>
                   <p class="card-text">@lang('flights.flighthours')</p>
@@ -60,7 +60,7 @@
           @if($user->current_airport)
             <div class="col-lg-6">
               <div class="card text-center">
-                <div class="card-body">
+                <div class="card-body text-black">
                   <div class="social-description">
                     <h2 class="card-title">{{ $user->current_airport->icao }}</h2>
                     <p class="card-text">@lang('airports.current')</p>
@@ -74,7 +74,7 @@
           @if(setting('pilots.allow_transfer_hours') === true)
             <div class="col-lg-6">
               <div class="card text-center">
-                <div class="card-body">
+                <div class="card-body text-black">
                   <div class="social-description">
                     <h2 class="card-title">@minutestohours($user->transfer_time)h</h2>
                     <p class="card-text">@lang('profile.transferhours')</p>
@@ -93,7 +93,7 @@
     <div class="clearfix" style="height: 50px;"></div>
     <div class="row">
       <div class="col-sm-12">
-        <h3 class="description">@lang('profile.your-awards')</h3>
+        <h3 class="description text-white">@lang('profile.your-awards')</h3>
         @foreach($user->awards->chunk(3) as $awards)
           <div class="row">
             @foreach($awards as $award)
@@ -143,8 +143,8 @@
              class="btn btn-primary">@lang('common.edit')</a>
         </div>
 
-        <h3 class="description">@lang('profile.your-profile')</h3>
-        <table class="table table-full-width">
+        <h3 class="description text-white">@lang('profile.your-profile')</h3>
+        <table class="table table-full-width bg-white">
           <tr>
             <td>@lang('common.email')</td>
             <td>{{ $user->email }}</td>

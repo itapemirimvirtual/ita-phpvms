@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <table class="table">
+    <table class="table text-white">
       <tr>
         <td>@lang('common.name')</td>
         <td>
