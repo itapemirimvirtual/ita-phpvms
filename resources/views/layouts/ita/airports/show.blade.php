@@ -77,7 +77,7 @@
           @lang('flights.none')
         </div>
       @else
-        <table class="table table-striped">
+        <table class="table table-striped bg-white">
           <thead>
           <tr>
             <th class="text-left">@lang('airports.ident')</th>
