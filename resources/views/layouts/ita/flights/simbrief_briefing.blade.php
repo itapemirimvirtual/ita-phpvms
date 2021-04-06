@@ -3,11 +3,11 @@
 
 @section('content')
   <div class="row">
-    <div class="col-sm-6">
-      <h2>{{ $simbrief->xml->general->icao_airline }}{{ $simbrief->xml->general->flight_number }}
+    <div class="col-sm-6 tex">
+      <h2 class="text-white">{{ $simbrief->xml->general->icao_airline }}{{ $simbrief->xml->general->flight_number }}
         : {{ $simbrief->xml->origin->icao_code }} to {{ $simbrief->xml->destination->icao_code }}</h2>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 text-white">
       @if (empty($simbrief->pirep_id))
         <a class="btn btn-outline-info pull-right btn-lg"
            style="margin-top: -10px; margin-bottom: 5px"
@@ -27,10 +27,10 @@
       <div class="row">
         <div class="col-6">
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>
               &nbsp;Dispatch Information
             </h6>
-            <div class="form-container-body">
+            <div class="form-container-body bg-white">
               <div class="row">
                 <div class="col-4 text-center">
                   <div><p class="small text-uppercase pb-sm-0 mb-sm-1">Flight</p>
@@ -114,10 +114,10 @@
           </div>
 
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>
               &nbsp;Flight Plan
             </h6>
-            <div class="form-container-body">
+            <div class="form-container-body bg-white">
               <div class="row">
                 <div class="col-12">
                   <p class="border border-dark rounded p-1 small text-monospace">
@@ -129,8 +129,8 @@
           </div>
 
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>&nbsp;Weather</h6>
-            <div class="form-container-body">
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>&nbsp;Weather</h6>
+            <div class="form-container-body bg-white">
               <div class="row">
                 <div class="col-12">
                   <div><p class="small text-uppercase pb-sm-0 mb-sm-1">Departure METAR</p>
@@ -167,7 +167,7 @@
 
         <div class="col-6">
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>
               &nbsp;Download Flight Plan
             </h6>
             <div class="form-container-body">
@@ -189,7 +189,7 @@
           </div>
 
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>&nbsp;Prefile ATC Flight Plan</h6>
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>&nbsp;Prefile ATC Flight Plan</h6>
             <div class="form-container-body">
               <div class="row">
                 <div class="col-4" align="center">
@@ -237,10 +237,10 @@
             </div>
           </div>
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>
               &nbsp;OFP
             </h6>
-            <div class="form-container-body border border-dark">
+            <div class="form-container-body border border-dark bg-white">
               <div class="overflow-auto" style="height: 750px;">
                 {!! $simbrief->xml->text->plan_html !!}
               </div>
@@ -252,7 +252,7 @@
       <div class="row">
         <div class="col-12">
           <div class="form-container">
-            <h6><i class="fas fa-info-circle"></i>
+            <h6 class="bg-yellow"><i class="fas fa-info-circle"></i>
               &nbsp;Flight Maps
             </h6>
             <div class="form-container-body">
