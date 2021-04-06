@@ -3,7 +3,7 @@
 
 @section('content')
   <div class="row" style="margin-bottom: 30px;">
-    <div class="col-12">
+    <div class="col-12 text-white">
       <h2>{{ $airport->full_name }}</h2>
     </div>
 
@@ -28,7 +28,7 @@
     {{-- There are files uploaded and a user is logged in--}}
     @if(count($airport->files) > 0 && Auth::check())
       <div class="col-12">
-        <h3>{{ trans_choice('common.download', 2) }}</h3>
+        <h3 class="text-white">{{ trans_choice('common.download', 2) }}</h3>
         @include('downloads.table', ['files' => $airport->files])
       </div>
     @endif
@@ -36,13 +36,13 @@
 
   <div class="row">
     <div class="col-6">
-      <h5>@lang('flights.inbound')</h5>
+      <h5 class="text-white">@lang('flights.inbound')</h5>
       @if(!$inbound_flights)
         <div class="jumbotron text-center">
           @lang('flights.none')
         </div>
       @else
-        <table class="table table-striped">
+        <table class="table table-striped bg-white">
           <thead>
           <tr>
             <th class="text-left">@lang('airports.ident')</th>
@@ -71,7 +71,7 @@
     </div>
 
     <div class="col-6">
-      <h5>@lang('flights.outbound')</h5>
+      <h5 class="text-white">@lang('flights.outbound')</h5>
       @if(!$outbound_flights)
         <div class="jumbotron text-center">
           @lang('flights.none')

@@ -4,7 +4,7 @@ If you want to edit this, you can reference the CheckWX API docs:
 https://api.checkwx.com/#metar-decoded
 
 --}}
-<table class="table table-striped">
+<table class="table table-striped bg-white">
   @if($config['raw_only'] != true && $metar)
     <tr>
       <td>@lang('widgets.weather.conditions')</td>
