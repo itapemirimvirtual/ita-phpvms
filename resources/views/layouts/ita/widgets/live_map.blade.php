@@ -77,7 +77,7 @@ and being mindful of the rivets bindings
 <div id="live_flights" class="row">
   <div class="col-md-12">
     <div rv-hide="has_data" class="jumbotron text-center">@lang('widgets.livemap.noflights')</div>
-    <table rv-show="has_data" id="live_flights_table" class="table table-striped">
+    <table rv-show="has_data" id="live_flights_table" class="table table-striped bg-white">
       <thead>
       <tr class="text-small header">
         <td class="text-small">{{ trans_choice('common.flight', 2) }}</td>
