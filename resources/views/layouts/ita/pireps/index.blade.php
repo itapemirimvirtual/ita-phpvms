@@ -3,7 +3,7 @@
 
 @section('content')
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 text-white">
       <div style="float:right;">
         <a class="btn btn-info pull-right btn-lg"
            style="margin-top: -10px;margin-bottom: 5px"

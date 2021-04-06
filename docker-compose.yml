@@ -57,7 +57,7 @@ services:
     volumes:
       - ./:/var/www
     tty: true
-    command: yarn dev
+    command: yarn watch
 
   # Use this to tail the logs so it's just all in a single window
   logs:

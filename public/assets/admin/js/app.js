@@ -717,7 +717,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\thinm\Code\itapemirim-virtual\ita-phpvms\resources\js\admin\app.js */"./resources/js/admin/app.js");
+module.exports = __webpack_require__(/*! /var/www/resources/js/admin/app.js */"./resources/js/admin/app.js");
 
 
 /***/ })

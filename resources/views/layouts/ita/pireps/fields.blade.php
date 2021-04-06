@@ -297,13 +297,13 @@ flight reports that have been filed. You've been warned!
   {{--
       Write out the custom fields, and label if they're required
   --}}
-  <div class="col-4">
+  <div class="col-4 text-white">
     <div class="form-container">
       <h6><i class="fab fa-wpforms"></i>
         &nbsp;{{ trans_choice('common.field', 2) }}
       </h6>
       <div class="form-container-body">
-        <table class="table table-striped">
+        <table class="table table-striped text-white">
           @if(isset($pirep) && $pirep->fields)
             @each('pireps.custom_fields', $pirep->fields, 'field')
           @else
@@ -314,8 +314,9 @@ flight reports that have been filed. You've been warned!
     </div>
   </div>
 </div>
+
 <div class="row">
-  <div class="col-sm-12">
+  <div class="col-sm-12 text-white">
     <div class="float-right">
       <div class="form-group">
 

@@ -3,12 +3,12 @@
 
 @section('content')
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-8 text-white">
       <h2>{{ $pirep->airline->icao }}{{ $pirep->ident }}
         : {{ $pirep->dpt_airport_id }} to {{ $pirep->arr_airport_id }}</h2>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-4 text-white">
       {{-- Show the link to edit if it can be edited --}}
       @if (!empty($pirep->simbrief))
         <a href="{{ url(route('frontend.simbrief.briefing', [$pirep->simbrief->id])) }}"
@@ -36,7 +36,7 @@
   </div>
 
   <div class="row">
-    <div class="col-8">
+    <div class="col-8 text-white">
       <div class="row">
         {{--
             DEPARTURE INFO
@@ -98,7 +98,7 @@
     --}}
 
     <div class="col-4">
-      <table class="table table-striped">
+      <table class="table table-striped bg-white">
         <tr>
           <td width="30%">@lang('common.state')</td>
           <td>
@@ -157,8 +157,8 @@
       @endif
 
       @if(count($pirep->fields) > 0)
-        <h5>{{ trans_choice('common.field', 2) }}</h5>
-        <table class="table table-hover table-condensed">
+        <h5 class="text-white">{{ trans_choice('common.field', 2) }}</h5>
+        <table class="table table-condensed text-white">
           <thead>
           <th>@lang('common.name')</th>
           <th>{{ trans_choice('common.value', 1) }}</th>
@@ -185,7 +185,7 @@
         <div class="row">
           <div class="col-12">
             <h5>{{ trans_choice('pireps.fare', 2) }}</h5>
-            <table class="table table-hover table-condensed">
+            <table class="table table-hover table-condensed bg-white">
               <thead>
               <th>@lang('pireps.class')</th>
               <th>@lang('pireps.count')</th>
@@ -209,10 +209,10 @@
     <div class="separator"></div>
     <div class="row">
       <div class="col-12">
-        <h5>@lang('pireps.flightlog')</h5>
+        <h5 class="text-white">@lang('pireps.flightlog')</h5>
       </div>
       <div class="col-12">
-        <table class="table table-hover table-condensed" id="users-table">
+        <table class="table table-condensed text-white" id="users-table">
           <tbody>
           @foreach($pirep->acars_logs as $log)
             <tr>

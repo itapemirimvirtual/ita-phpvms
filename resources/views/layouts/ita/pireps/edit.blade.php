@@ -2,7 +2,7 @@
 @section('title', __('pireps.editflightreport'))
 @section('content')
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 text-white">
       <h2>@lang('pireps.editflightreport')</h2>
       @include('flash::message')
       {{ Form::model($pirep, [

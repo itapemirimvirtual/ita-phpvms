@@ -727,9 +727,9 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\thinm\Code\itapemirim-virtual\ita-phpvms\resources\js\frontend\app.js */"./resources/js/frontend/app.js");
-__webpack_require__(/*! C:\Users\thinm\Code\itapemirim-virtual\ita-phpvms\resources\sass\now-ui\now-ui-kit.scss */"./resources/sass/now-ui/now-ui-kit.scss");
-module.exports = __webpack_require__(/*! C:\Users\thinm\Code\itapemirim-virtual\ita-phpvms\resources\sass\admin\paper-dashboard.scss */"./resources/sass/admin/paper-dashboard.scss");
+__webpack_require__(/*! /var/www/resources/js/frontend/app.js */"./resources/js/frontend/app.js");
+__webpack_require__(/*! /var/www/resources/sass/now-ui/now-ui-kit.scss */"./resources/sass/now-ui/now-ui-kit.scss");
+module.exports = __webpack_require__(/*! /var/www/resources/sass/admin/paper-dashboard.scss */"./resources/sass/admin/paper-dashboard.scss");
 
 
 /***/ })
