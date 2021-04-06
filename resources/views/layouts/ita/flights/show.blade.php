@@ -6,12 +6,12 @@
     <div class="col-8">
       <div class="row">
         <div class="col-12">
-          <h2>{{ $flight->ident }}</h2>
+          <h2 class="text-white">{{ $flight->ident }}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <table class="table">
+          <table class="table bg-white">
             <tr>
               <td>@lang('common.departure')</td>
               <td>
