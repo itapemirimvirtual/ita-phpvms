@@ -9,7 +9,7 @@
         vertical-align: middle;
 
         &:not(.btn):not(.dropdown-item){
-            color: $white-color;
+            color: $black-color;
         }
     }
 
@@ -209,4 +209,12 @@
 
 .bg-black {
     background-color: $black-bg !important;
+}
+
+.bg-light-black {
+    background-color: $light-black !important;
+}
+
+.bg-yellow {
+    background-color: $yellow-bg !important;
 }

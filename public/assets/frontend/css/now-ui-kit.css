@@ -3552,7 +3552,7 @@ Created using IcoMoon - icomoon.io
   vertical-align: middle;
 }
 .navbar a:not(.btn):not(.dropdown-item) {
-  color: #FFFFFF;
+  color: #2c2c2c;
 }
 .navbar p {
   display: inline-block;
@@ -3715,6 +3715,14 @@ Created using IcoMoon - icomoon.io
 
 .bg-black {
   background-color: rgba(30, 30, 30, 0.97) !important;
+}
+
+.bg-light-black {
+  background-color: #444 !important;
+}
+
+.bg-yellow {
+  background-color: #fdda32 !important;
 }
 
 .dropdown-menu {
