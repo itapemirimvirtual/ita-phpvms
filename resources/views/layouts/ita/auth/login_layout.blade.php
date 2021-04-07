@@ -17,13 +17,13 @@
   @yield('css')
 </head>
 
-<body class="login-page" style="background: #067ec1;">
+<body class="login-page bg-yellow">
 <!-- Navbar -->
 
 <!-- End Navbar -->
 <div class="page-header">
 
-  <div class="container">
+  <div class="container" style="padding-top: 200px">
     @yield('content')
   </div>
   <footer class="footer">

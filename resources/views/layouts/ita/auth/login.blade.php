@@ -4,17 +4,17 @@
 @section('content')
   <div class="col-md-4 ml-auto mr-auto content-center">
     <div class="card card-login card-plain">
+
       {{ Form::open(['url' => url('/login'), 'method' => 'post', 'class' => 'form']) }}
       <div class="header header-primary text-center">
         <div class="logo-container" style="width: 320px;">
-          <img src="{{ public_asset('/assets/frontend/img/logo.svg') }}" width="320" height="320"
-               style="background: #FFF">
+          <img src="{{ public_asset('/assets/img/ita/logo-black.png') }}">
         </div>
       </div>
       <div class="card-body">
         <div class="input-group form-group-no-border{{ $errors->has('email') ? ' has-error' : '' }} input-lg">
           <div class="input-group-prepend">
-            <span class="input-group-text">
+            <span class="input-group-text" style="padding-right: 8px">
               <i class="now-ui-icons users_circle-08"></i>
             </span>
           </div>
@@ -35,7 +35,7 @@
 
         <div class="input-group form-group-no-border{{ $errors->has('password') ? ' has-error' : '' }} input-lg">
           <div class="input-group-prepend">
-            <span class="input-group-text">
+            <span class="input-group-text" style="padding-right: 8px">
               <i class="now-ui-icons text_caps-small"></i>
             </span>
           </div>
