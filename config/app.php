@@ -17,7 +17,7 @@ return [
     'version'       => '7.0.0',
     'debug_toolbar' => false,
 
-    'locale'          => env('APP_LOCALE', 'en'),
+    'locale'          => env('APP_LOCALE', 'pt-br'),
     'fallback_locale' => 'en',
 
     //

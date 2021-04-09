@@ -7,6 +7,7 @@ services:
       context: .
     environment:
       DB_HOST: mysql
+#      DB_HOST: '207.246.83.115'
       REDIS_HOST: redis
       APP_LOCALE: 'pt-br'
     volumes:
@@ -47,11 +48,12 @@ services:
 
   redis:
     image: redis:5.0.4-alpine
-    command: ["redis-server", "--appendonly", "yes"]
+    command: [ "redis-server", "--appendonly", "yes" ]
     volumes:
       - ./storage/docker/redis:/data
     ports:
       - 6379:6379
+
   node:
     image: node:lts
     working_dir: /var/www
@@ -61,13 +63,13 @@ services:
     command: yarn watch
 
   # Use this to tail the logs so it's just all in a single window
-  logs:
-    image: busybox
-    command: tail -f -F -n 0 /var/www/storage/logs/laravel.log
-    volumes:
-      - ./storage:/var/www/storage
-    depends_on:
-      - app
-      
+#  logs:
+#    image: busybox
+#    command: tail -f -F -n 0 /var/www/storage/logs/laravel.log
+#    volumes:
+#      - ./storage:/var/www/storage
+#    depends_on:
+#      - app
+
 volumes:
   db:
